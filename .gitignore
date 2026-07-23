@@ -1,0 +1,32 @@
+# dependencies
+node_modules
+client/node_modules
+
+# builds
+dist
+program/target
+**/target
+
+# rust
+Cargo.lock
+
+# secrets — NEVER commit keypairs or env
+.env
+.env.*
+*keypair*.json
+**/id.json
+*.pem
+
+# temp
+*.tgz
+*.log
+.DS_Store
+scratchpad
+
+# marketing media (kept locally, not in repo)
+marketing/*.mp4
+marketing/*.mp3
+marketing/*.wav
+marketing/*-strip.png
+marketing/clips/
+marketing/frames/
